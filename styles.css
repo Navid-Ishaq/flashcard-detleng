@@ -25,3 +25,27 @@
 .range-group-btn:hover{border-color:var(--teal)}
 .range-group-btn.active{background:var(--light);border-color:var(--teal);outline:2px solid var(--teal);outline-offset:1px}
 .range-group-btn:focus-visible{outline:3px solid #df985d;outline-offset:3px}
+
+/* Learning and self-test controls share the established light/dark palette. */
+.practice-mode-choice{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:8px}
+.practice-mode-btn{display:flex;flex-direction:column;gap:4px;padding:13px 12px;background:var(--panel);color:var(--text);border:1px solid var(--border);border-radius:13px;text-align:left;font:inherit}
+.practice-mode-btn strong{font-size:16px}.practice-mode-btn small{font-size:12px;color:var(--muted);line-height:1.5}
+.practice-mode-btn.active{background:var(--light);border-color:var(--teal);box-shadow:inset 0 0 0 1px var(--teal)}
+.practice-mode-note{font-size:12px;color:var(--muted);margin:7px 0 12px}
+.session-summary{display:flex;align-items:center;flex-wrap:wrap;gap:8px 16px;margin:12px 0;font-size:14px;color:var(--teal)}
+.session-summary p{margin:0}.last-result{display:block;width:100%;font-size:17px;color:var(--ink)}
+.session-actions{display:flex;flex-wrap:wrap;gap:8px}.session-actions:empty{display:none}
+.study-notice{margin:0 0 12px;color:var(--teal);font-size:14px;font-weight:700}.study-notice:empty{display:none}
+.option:disabled{opacity:1;cursor:default}.option.selected:not(.correct):not(.incorrect){border-width:2px}
+.test-result-dialog{width:min(540px,calc(100% - 28px));max-height:calc(100dvh - 32px);overflow:auto;border:1px solid var(--border);border-radius:28px;padding:34px clamp(20px,5vw,42px) 25px;background:var(--panel);color:var(--text);text-align:center;box-shadow:0 25px 100px #0005;font-family:inherit}
+.test-result-dialog::backdrop{background:rgba(8,32,26,.68);backdrop-filter:blur(5px)}
+.result-close{position:absolute;top:13px;right:13px;width:36px;height:36px;border:1px solid var(--border);border-radius:50%;background:var(--panel);color:var(--text);font-size:24px;line-height:1}
+.result-emblem{display:grid;place-items:center;width:66px;height:66px;margin:2px auto 20px;border-radius:50%;background:var(--light);color:var(--teal);font-size:36px}
+.test-result-dialog .mini-overline{font-size:10px;letter-spacing:.15em;margin-bottom:10px}
+.test-result-dialog h2{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:clamp(27px,5vw,38px);line-height:1.15;color:var(--ink);margin:0 0 17px}
+.result-score{font-size:clamp(56px,12vw,82px);font-weight:800;line-height:1.1;letter-spacing:-.04em;color:var(--teal)}
+.result-percent{font-weight:800;font-size:19px;margin:8px 0}.result-detail{font-size:13px;color:var(--muted);margin:8px 0 18px}
+.result-message{font-size:16px;line-height:1.65;margin:0 0 24px;color:var(--text)}
+.result-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}.result-actions .btn{white-space:normal;padding:12px;font-size:14px}
+.result-footer{font-size:12px;color:var(--muted);margin:17px 0 0}
+@media(max-width:480px){.practice-mode-choice{grid-template-columns:1fr}.result-actions{grid-template-columns:1fr}.test-result-dialog{padding-top:28px;border-radius:20px}}
