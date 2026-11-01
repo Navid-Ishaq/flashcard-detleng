@@ -49,3 +49,9 @@
 .result-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}.result-actions .btn{white-space:normal;padding:12px;font-size:14px}
 .result-footer{font-size:12px;color:var(--muted);margin:17px 0 0}
 @media(max-width:480px){.practice-mode-choice{grid-template-columns:1fr}.result-actions{grid-template-columns:1fr}.test-result-dialog{padding-top:28px;border-radius:20px}}
+
+/* Outcome colours appear immediately in Learning, and only after Test submission. */
+.quiz-question.is-correct{background:#e6f6e8;border-color:#4da578;color:#183a33}
+.quiz-question.is-incorrect{background:#fff0e9;border-color:#d59674;color:#843b2c}
+.dark .quiz-question.is-correct{background:#244735;border-color:#7ac896;color:#d9f5e2}
+.dark .quiz-question.is-incorrect{background:#4a2c28;border-color:#e99b88;color:#ffd7cd}
