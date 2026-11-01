@@ -55,3 +55,13 @@
 .quiz-question.is-incorrect{background:#fff0e9;border-color:#d59674;color:#843b2c}
 .dark .quiz-question.is-correct{background:#244735;border-color:#7ac896;color:#d9f5e2}
 .dark .quiz-question.is-incorrect{background:#4a2c28;border-color:#e99b88;color:#ffd7cd}
+
+/* Selection is an outline; mastery and attempt status have separate colours. */
+.range-group-btn.active{background:var(--panel);border-color:var(--teal);box-shadow:none}
+.range-group-btn.group-mastered{background:#e6f6e8;border-color:#4da578;color:#183a33}
+.range-group-btn.group-needs-practice{background:#fff0e9;border-color:#d59674;color:#843b2c}
+.range-group-btn.group-in-progress{background:#e8f2ff;border-color:#598bc6;color:#174c87}
+.dark .range-group-btn.group-mastered{background:#244735;border-color:#7ac896;color:#d9f5e2}
+.dark .range-group-btn.group-needs-practice{background:#4a2c28;border-color:#e99b88;color:#ffd7cd}
+.dark .range-group-btn.group-in-progress{background:#203d59;border-color:#87b9ed;color:#d9ecff}
+.group-progress-legend{font-size:12px;line-height:1.6;color:var(--muted);margin-top:12px!important}
