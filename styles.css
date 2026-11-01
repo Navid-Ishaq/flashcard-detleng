@@ -12,3 +12,16 @@
 .quiz-question.is-current{outline:2px solid var(--ink);outline-offset:1px;font-weight:800}
 .quiz-question:focus-visible{outline:3px solid #df985d;outline-offset:3px}
 .quiz-navigation-legend{display:flex;flex-wrap:wrap;gap:6px 20px;margin:14px 0 0;font-size:12px;color:var(--muted)}
+
+/* Range shortcuts use the existing study palette in both themes. */
+.range-groups{margin:20px 0}
+.range-groups h4{margin:0 0 5px;font-size:17px;color:var(--ink)}
+.range-groups>p{margin:0 0 13px;font-size:13px;color:var(--muted)}
+.range-group-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(90px,1fr));gap:9px}
+.range-group-btn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-width:0;min-height:86px;padding:9px 5px;border:1px solid var(--border);border-radius:11px;background:var(--panel);color:var(--text);font:inherit;line-height:1.4;overflow-wrap:anywhere}
+.range-group-btn strong{font-size:18px}
+.range-group-btn span{font-size:13px}
+.range-group-btn small{font-size:11px;color:var(--muted)}
+.range-group-btn:hover{border-color:var(--teal)}
+.range-group-btn.active{background:var(--light);border-color:var(--teal);outline:2px solid var(--teal);outline-offset:1px}
+.range-group-btn:focus-visible{outline:3px solid #df985d;outline-offset:3px}
